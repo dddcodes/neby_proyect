@@ -183,16 +183,22 @@ body {
     text-align: center;
 }
 
+.hidden,
+.hidden{
+  display:none;
+}
+
+/* styles.css */
+
+/* ... el resto de tu CSS ... */
+
 .mascot-container {
     position: fixed;
     bottom: 15px;
     right: 15px;
     display: flex;
     align-items: flex-end;
-}
-.hidden,
-.hidden{
-  display:none;
+    max-width: 80%; /* El contenedor no será más ancho que el 80% de la pantalla */
 }
 
 .speech-bubble {
@@ -207,8 +213,14 @@ body {
     margin-right: 8px;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Muestra "..." si el texto se desborda */
+    max-width: 200px; /* Ancho máximo para el globo de texto */
 }
 
+.speech-bubble.hidden {
+    opacity: 0;
+}
 
 .speech-bubble:after {
     content: '';
@@ -226,3 +238,5 @@ body {
     border-radius: 50%;
     background: linear-gradient(to bottom right, #a8dadc, #457b9d, #1d3557);
 }
+
+/* ... el resto de tu CSS ... */
