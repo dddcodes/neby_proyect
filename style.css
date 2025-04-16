@@ -53,7 +53,7 @@ body {
 .header h1 {
     font-size: 2em;
     margin-bottom: 0;
-    background: linear-gradient(to right, #87ceeb, #a8dadc);
+    background: linear-gradient(to right, #33f0ff , #1f73a0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
