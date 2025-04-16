@@ -201,20 +201,20 @@ body {
     max-width: 80%; /* El contenedor no será más ancho que el 80% de la pantalla */
 }
 
-.speech-bubble {
+..speech-bubble {
     position: relative;
     background-color: #eee;
     color: #333;
     border-radius: 12px;
     padding: 8px 12px;
     font-size: 0.8em;
-    white-space: nowrap;
+    /* Remove this line to allow text wrapping */
+    /* white-space: nowrap; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-right: 8px;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    overflow: hidden;
-    text-overflow: ellipsis; /* Muestra "..." si el texto se desborda */
+    overflow-wrap: break-word; /* This will break long words if needed */
     max-width: 200px; /* Ancho máximo para el globo de texto */
 }
 
