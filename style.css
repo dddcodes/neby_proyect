@@ -91,7 +91,7 @@ body {
 }
 
 .feeling-slider {
-    width: 100%;
+    width: 300px;
     -webkit-appearance: none;
     appearance: none;
     background: #444;
