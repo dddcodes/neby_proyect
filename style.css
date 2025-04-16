@@ -201,7 +201,7 @@ body {
     max-width: 80%; /* El contenedor no será más ancho que el 80% de la pantalla */
 }
 
-..speech-bubble {
+.speech-bubble {
     position: relative;
     background-color: #eee;
     color: #333;
