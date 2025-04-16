@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Emocional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NEBULOSA</h1>
+            <p class="day">DÍA 1</p>
+        </div>
+
+        <div class="feeling">
+            <p>Hoy me siento <span id="feeling-value">3</span> de 10 :(</p>
+            <div class="slider-container">
+                <input type="range" min="1" max="10" value="3" id="feeling-slider">
+                <div class="slider-marks">
+                    <span>1</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="advice-box">
+            <p>CONSEJO</p>
+            <div class="advice-text">
+                <p id="advice">Recuerda que cada día es una nueva oportunidad para sentirte mejor. ¡Respira profundo!</p>
+            </div>
+        </div>
+
+        <div class="youtube-recommendation">
+            <p>RECOMENDACIÓN DE YOUTUBE</p>
+          <p class="video-title"></p>
+            <div class="youtube-player">
+              
+                <iframe id="youtube-iframe" width="100%" height="200" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+
+        <div class="mascot-container">
+            <div class="speech-bubble">
+                <p id="mascot-text">¡Ánimo!</p>
+            </div>
+            <div class="gradient-circle"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

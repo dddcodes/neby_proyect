@@ -1,0 +1,228 @@
+/* styles.css */
+
+body {
+    font-family: sans-serif;
+    background-color: #181818;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #282828;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+    width: auto;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #87ceeb, #a8dadc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.header .day {
+    color: #777;
+    font-size: 0.8em;
+}
+
+.feeling {
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.feeling p {
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.feeling span#feeling-value {
+    color: #ffdd57;
+    font-weight: bold;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+}
+
+.feeling-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #444;
+    height: 6px;
+    border-radius: 3px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.feeling-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #87ceeb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feeling-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #87ceeb;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.slider-marks {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #777;
+    font-size: 0.7em;
+}
+
+.slider-marks span:not(:first-child):not(:last-child) {
+    visibility: hidden;
+}
+
+.advice-box, .phrase-box, .youtube-recommendation {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.advice-box p, .phrase-box p, .youtube-recommendation p {
+    color: #ddd;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.advice-text, .phrase-text {
+    color: #eee;
+    font-size: 0.85em;
+}
+
+.youtube-recommendation .youtube-player {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.youtube-recommendation .youtube-player iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.youtube-recommendation .video-title {
+    color: #999;
+    font-size: 0.75em;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.mascot-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+.hidden,
+.hidden{
+  display:none;
+}
+
+.speech-bubble {
+    position: relative;
+    background-color: #eee;
+    color: #333;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 8px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    bottom: 8px;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #eee;
+    border-bottom: 8px solid transparent;
+}
+
+.gradient-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #a8dadc, #457b9d, #1d3557);
+}
